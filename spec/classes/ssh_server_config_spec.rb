@@ -11,14 +11,19 @@ describe 'ssh::server::config' do
         AcceptEnv
         AddressFamily
         AllowAgentForwarding
+        AllowGroups
+        AllowStreamLocalForwarding
         AllowTcpForwarding
         AllowUsers
         AuthenticationMethods
         AuthorizedKeysCommand
         AuthorizedKeysCommandUser
         AuthorizedKeysFile
+        AuthorizedPrincipalsCommand
+        AuthorizedPrincipalsCommandUser
         AuthorizedPrincipalsFile
         Banner
+        CASignatureAlgorithms
         ChallengeResponseAuthentication
         ChrootDirectory
         Ciphers
@@ -27,22 +32,29 @@ describe 'ssh::server::config' do
         Compression
         DenyGroups
         DenyUsers
+        DisableForwarding
         ExposeAuthInfo
+        FingerprintHash
         ForceCommand
         GatewayPorts
         GSSAPIAuthentication
-        GSSAPIKeyExchange
         GSSAPICleanupCredentials
-        GSSAPIStrictAcceptorCheck
+        GSSAPIKeyExchange
         GSSAPIStoreCredentialsOnRekey
+        GSSAPIStrictAcceptorCheck
+        HostbasedAcceptedKeyTypes
         HostbasedAuthentication
         HostbasedUsesNameFromPacketOnly
         HostCertificate
+        HostKey
+        HostKeyAgent
         HostKeyAlgorithms
         IgnoreRhosts
         IgnoreUserKnownHosts
         IPQoS
+        KbdInteractiveAuthentication
         KerberosAuthentication
+        KerberosGetAFSToken
         KerberosOrLocalPasswd
         KerberosTicketCleanup
         KexAlgorithms
@@ -56,10 +68,13 @@ describe 'ssh::server::config' do
         MaxStartups
         PasswordAuthentication
         PermitEmptyPasswords
+        PermitListen
         PermitOpen
         PermitRootLogin
+        PermitTTY
         PermitTunnel
         PermitUserEnvironment
+        PermitUserRC
         PidFile
         Port
         PrintLastLog
@@ -67,15 +82,20 @@ describe 'ssh::server::config' do
         Protocol
         PubkeyAcceptedKeyTypes
         PubkeyAuthentication
+        RekeyLimit
         RevokedKeys
         RhostsRSAAuthentication
         RSAAuthentication
         SACLSupport
         ServerKeyBits
+        SetEnv
+        StreamLocalBindMask
+        StreamLocalBindUnlink
         StrictModes
         SyslogFacility
         TCPKeepAlive
         TrustedUserCAKeys
+        UseBlacklist
         UseDNS
         UseLogin
         UsePAM
