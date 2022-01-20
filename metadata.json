@@ -61,7 +61,7 @@
       "version_requirement": ">= 1.1.0"
     },
     {
-      "name": "puppetlabs/sshkey_core",
+      "name": "puppetlabs/sshkeys_core",
       "version_requirement": ">= 2.0.0 < 3.0.0"
     },
     {
