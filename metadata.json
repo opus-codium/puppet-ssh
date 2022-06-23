@@ -4,9 +4,9 @@
   "author": "zleslie",
   "summary": "Puppet ssh management module",
   "license": "Apache-2.0",
-  "source": "git://github.com/xaque208/puppet-ssh.git",
-  "project_page": "https://github.com/xaque208/puppet-ssh",
-  "issues_url": "https://github.com/xaque208/puppet-ssh/issues",
+  "source": "git://github.com/opus-codium/puppet-ssh.git",
+  "project_page": "https://github.com/opus-codium/puppet-ssh",
+  "issues_url": "https://github.com/opus-codium/puppet-ssh/issues",
   "operatingsystem_support": [
     {
       "operatingsystem": "OpenBSD",
