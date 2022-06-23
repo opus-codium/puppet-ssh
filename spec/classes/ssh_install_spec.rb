@@ -7,17 +7,22 @@ describe 'ssh::install' do
 
       it { is_expected.to contain_class('ssh::install') }
 
+      packages = []
       case facts[:osfamily]
       when 'Debian'
-        it { is_expected.to contain_package('openssh-client') }
-        it { is_expected.to contain_package('openssh-server') }
+        packages << 'openssh-client'
+        packages << 'openssh-server'
       when 'RedHat'
-        it { is_expected.to contain_package('openssh-clients') }
-        it { is_expected.to contain_package('openssh-server') }
+        packages << 'openssh-clients'
+        packages << 'openssh-server'
       when 'Solaris'
-        it { is_expected.to contain_package('network/ssh') }
+        packages << 'network/ssh'
       when 'Suse'
-        it { is_expected.to contain_package('openssh') }
+        packages << 'openssh'
+      end
+
+      packages.each do |package|
+        it { is_expected.to contain_package(package) }
       end
     end
   end
