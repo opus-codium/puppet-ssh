@@ -1,6 +1,8 @@
 # Puppet managed SSH infrastructure
 
-[![Puppet Forge](https://img.shields.io/puppetforge/v/zleslie/ssh.svg)]() [![Build Status](https://travis-ci.org/xaque208/puppet-ssh.svg?branch=master)](https://travis-ci.org/xaque208/puppet-ssh)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/opuscodium/ssh.svg)](https://forge.puppetlabs.com/opuscodium/ssh)
+[![Build Status](https://github.com/opus-codium/puppet-ssh/workflows/CI/badge.svg)](https://github.com/opus-codium/puppet-ssh/actions?query=workflow%3ACI)
+[![Donated by xaque208](https://img.shields.io/badge/donated%20by-xaque208-fb7047.svg)](#authors)
 
 A Puppet module for managing OpenSSH servers and configurations.  The goals of
 this module is to provide a flexible yet complete approach to managing OpenSSH
