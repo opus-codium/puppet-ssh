@@ -9,43 +9,34 @@
   "issues_url": "https://github.com/opus-codium/puppet-ssh/issues",
   "operatingsystem_support": [
     {
-      "operatingsystem": "OpenBSD",
-      "operatingsystemrelease": [
-        "5.9",
-        "5.8"
-      ]
+      "operatingsystem": "OpenBSD"
     },
     {
       "operatingsystem": "FreeBSD",
       "operatingsystemrelease": [
-        "10.3",
-        "10.2"
+        "12",
+        "13"
       ]
     },
     {
-      "operatingsystem": "Darwin",
-      "operatingsystemrelease": [
-        "15.5.0"
-      ]
+      "operatingsystem": "Darwin"
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "8",
-        "7"
+        "10",
+        "11"
       ]
     },
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
-      "operatingsystem": "Archlinux",
-      "operatingsystemrelease": [
-        "4.7"
-      ]
+      "operatingsystem": "Archlinux"
     }
   ],
   "requirements": [
