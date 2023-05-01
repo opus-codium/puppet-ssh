@@ -131,7 +131,7 @@ describe 'ssh::server::config' do
         it { is_expected.to contain_concat__fragment('sshd_config').with_content(%r{^Ciphers chacha20-poly1305@openssh.com,aes256-ctr$}) }
       end
 
-      context 'with denyusers => []' do
+      context 'with acceptenv => []' do
         let(:params) { { acceptenv: ['AWS_*', 'TERM'] } }
 
         it { is_expected.to contain_concat__fragment('sshd_config').with_content(%r{^AcceptEnv AWS_\* TERM$}) }
