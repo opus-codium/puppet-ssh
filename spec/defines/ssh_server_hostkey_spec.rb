@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'ssh::server::hostkey' do
@@ -8,7 +10,7 @@ describe 'ssh::server::hostkey' do
     context 'with default params' do
       let(:params) { { path: '/path/to/rsa_hostkey' } }
 
-      it { is_expected.to contain_concat__fragment('sshd_config-hostkey-rsa').with_content(%r{HostKey \/path\/to\/rsa_hostkey}) }
+      it { is_expected.to contain_concat__fragment('sshd_config-hostkey-rsa').with_content(%r{HostKey /path/to/rsa_hostkey}) }
     end
 
     context 'with order set' do
@@ -20,7 +22,7 @@ describe 'ssh::server::hostkey' do
       end
 
       it do
-        is_expected.to contain_concat__fragment('sshd_config-hostkey-rsa').with(content: %r{HostKey \/path\/to\/rsa_hostkey},
+        is_expected.to contain_concat__fragment('sshd_config-hostkey-rsa').with(content: %r{HostKey /path/to/rsa_hostkey},
                                                                                 order: 45)
       end
     end

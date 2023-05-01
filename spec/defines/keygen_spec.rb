@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'ssh::keygen' do
@@ -75,6 +77,7 @@ describe 'ssh::keygen' do
         end
 
         it { is_expected.to contain_notify('Only SSH dsa keys of 1024 size are valid, proceeding as such') }
+
         it do
           is_expected.to contain_exec('Generate dsa SSH key for Root').with(command: '/usr/bin/ssh-keygen -t dsa -b 1024 -f /root/.ssh/id_dsa')
         end
