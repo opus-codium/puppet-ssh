@@ -1,6 +1,6 @@
 {
   "name": "opuscodium-ssh",
-  "version": "3.0.0",
+  "version": "3.0.1-rc0",
   "author": "zleslie",
   "summary": "Puppet ssh management module",
   "license": "Apache-2.0",
