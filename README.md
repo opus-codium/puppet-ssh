@@ -1,8 +1,14 @@
 # Puppet managed SSH infrastructure
 
+<!-- header GFM -->
+[![Build Status](https://img.shields.io/github/actions/workflow/status/opus-codium/puppet-ssh/release.yml)](https://github.com/opus-codium/puppet-ssh/releases)
 [![Puppet Forge](https://img.shields.io/puppetforge/v/opuscodium/ssh.svg)](https://forge.puppetlabs.com/opuscodium/ssh)
-[![Build Status](https://github.com/opus-codium/puppet-ssh/workflows/CI/badge.svg)](https://github.com/opus-codium/puppet-ssh/actions?query=workflow%3ACI)
+[![Puppet Forge - downloads](https://img.shields.io/puppetforge/dt/opuscodium/ssh.svg)](https://forge.puppetlabs.com/opuscodium/ssh)
+[![Puppet Forge - endorsement](https://img.shields.io/puppetforge/e/opuscodium/ssh.svg)](https://forge.puppetlabs.com/opuscodium/ssh)
+[![Puppet Forge - scores](https://img.shields.io/puppetforge/f/opuscodium/ssh.svg)](https://forge.puppetlabs.com/opuscodium/ssh)
+[![License](https://img.shields.io/github/license/opus-codium/puppet-ssh.svg)](https://github.com/voxpupuli/opuscodium-ssh/blob/master/LICENSE.md)
 [![Donated by xaque208](https://img.shields.io/badge/donated%20by-xaque208-fb7047.svg)](#authors)
+<!-- header -->
 
 A Puppet module for managing OpenSSH servers and configurations.  The goals of
 this module is to provide a flexible yet complete approach to managing OpenSSH
